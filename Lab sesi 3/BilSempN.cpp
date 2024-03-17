@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int isPerfect(int num) {
+int BilsempN(int num) {
     int sum = 0;
     for (int i = 1; i <= num / 2; i++) {
         if (num % i == 0) {
@@ -18,7 +18,7 @@ int main() {
 
     printf("Bilangan sempurna hingga %d : ", N);
     for (int i = 2; i <= N; i++) {
-        if (isPerfect(i)) {
+        if (BilsempN(i)) {
             printf("%d, ", i);
         }
     }
